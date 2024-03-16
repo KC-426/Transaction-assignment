@@ -18,9 +18,10 @@ app.use(cookieParser())
 app.use(transactionRoutes);
 app.use(authRoutes)
 
-app.use('/', (req, res ) => {
-  res.send('WORKING')
-})
+app.use("/", (req, res) => {
+  console.log("Working ");
+  res.send("WORKING");
+});
 
 mongoose
   .connect(MONGOD_URI, { useNewUrlParser: true, useUnifiedTopology: true })

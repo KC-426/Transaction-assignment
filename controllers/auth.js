@@ -73,8 +73,8 @@ const userSignup = async (req, res) => {
       html: "<h1>Welcome you have successfully signed up ! </h1>",
     };
 
-    // const mailResult = await transport.sendMail(mailOptions);
-    // console.log("Mail sent successfully:", mailResult);
+    const mailResult = await transport.sendMail(mailOptions);
+    console.log("Mail sent successfully:", mailResult);
 
     res.status(201).json({
       success: true,
