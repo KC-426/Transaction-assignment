@@ -9,7 +9,7 @@ const CLIENT_ID =
 const CLIENT_SECRET = "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";
 const REDIRECT_URI = "https://developers.google.com/oauthplayground";
 REFRESH_TOKEN =
-  "1//04-24CbN6xfPBCgYIARAAGAQSNwF-L9Irt-wYUT_p1rDo6wNCNMQdxWdliqIiu9ydnoGakcuJOhBGVgcookBSIwLj0IA4StbGTWw";
+  "1//049JTQug4rI_DCgYIARAAGAQSNwF-L9Ir_K9Os1ucVNizApYQqanZvHXNQXJKxZyO1NkjAWWh9ILsLZZceCVavNjKo7m79bWYzqE";
 
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
@@ -73,8 +73,8 @@ const userSignup = async (req, res) => {
       html: "<h1>Welcome you have successfully signed up ! </h1>",
     };
 
-    const mailResult = await transport.sendMail(mailOptions);
-    console.log("Mail sent successfully:", mailResult);
+    // const mailResult = await transport.sendMail(mailOptions);
+    // console.log("Mail sent successfully:", mailResult);
 
     res.status(201).json({
       success: true,
